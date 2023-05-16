@@ -1,0 +1,31 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "HTTPBin",
+      "description": "Example API"
+    },
+    "paths": {
+      "/uuid": {
+        "get": {
+          "summary": "Return a UUID4",
+          "responses": {
+            "200": {
+              "description": "A random UUID4",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "properties": {
+                      "uuid": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
