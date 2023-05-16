@@ -5,6 +5,28 @@
       "title": "HTTPBin",
       "description": "Example API"
     },
+    "x-tyk-api-gateway": {
+        "info": {
+          "name": "petstore",
+          "state": {
+            "active": true
+          }
+        },
+        "upstream": {
+          "url": "https://httpbin.org"
+        },
+        "server": {
+          "listenPath": {
+            "value": "/httpbin/",
+            "strip": true
+          }
+        }
+    },
+    "servers": [
+        {
+            "url": "https://httpbin.org/"
+        }
+    ],
     "paths": {
       "/uuid": {
         "get": {
